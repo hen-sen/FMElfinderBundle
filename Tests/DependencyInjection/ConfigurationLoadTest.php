@@ -48,13 +48,13 @@ class ConfigurationLoadTest extends AbstractExtensionConfigurationTestCase
                     'connector'          => array(
                         'debug'   => true,
                         'binds'   => array(),
-                        'plugins' => array(),
+                        'plugin'  => array(),
                         'roots'   => array(
                             'uploads' => array(
                                 'driver'            => 'LocalFileSystem',
                                 'volume_id'         => 0,
                                 'disabled_commands' => array(),
-                                'plugins'           => array(),
+                                'plugin'            => array(),
                                 'path'              => 'uploads',
                                 'show_hidden'       => true,
                                 'flysystem'         => array(

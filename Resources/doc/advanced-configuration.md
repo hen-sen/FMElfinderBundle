@@ -36,7 +36,7 @@ fm_elfinder:
   loader: my_loader
 ```
 
-## Plugins
+## Plugin
 
 ElFinder comes with some plugins, like auto-resize, which can be enabled, by the following configuration:
 
@@ -54,7 +54,7 @@ fm_elfinder:
           binds:
               upload.presave:
                   - Plugin.AutoResize.onUpLoadPreSave
-          plugins:
+          plugin:
               AutoResize: # global resize options, applies to root which don't have his own resize configuraion
                   enable: true
                   maxWidth: 750
@@ -64,7 +64,7 @@ fm_elfinder:
               uploads:
                   driver: LocalFileSystem
                   path: uploads
-                  plugins:
+                  plugin:
                       AutoResize:
                           enable: true
                           maxWidth: 500
@@ -76,7 +76,7 @@ fm_elfinder:
               resize1:
                   driver: LocalFileSystem
                   path: uploads
-                  plugins:
+                  plugin:
                       AutoResize:
                           enable: true # For control by volume driver
                           maxWidth: 800 # Path to Water mark image
@@ -88,7 +88,7 @@ fm_elfinder:
               resize2:
                   driver: LocalFileSystem
                   path: uploads
-                  plugins:
+                  plugin:
                       AutoResize:
                           enable: true
                           maxWidth: 800

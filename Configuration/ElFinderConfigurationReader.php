@@ -71,7 +71,7 @@ class ElFinderConfigurationReader implements ElFinderConfigurationProviderInterf
         $options['corsSupport'] = $parameters['cors_support'];
         $options['debug']       = $parameters['connector']['debug'];
         $options['bind']        = $parameters['connector']['binds'];
-        $options['plugins']     = $parameters['connector']['plugins'];
+        $options['plugin']      = $parameters['connector']['plugin'];
         $options['roots']       = array();
 
         foreach ($parameters['connector']['roots'] as $parameter) {
@@ -92,7 +92,7 @@ class ElFinderConfigurationReader implements ElFinderConfigurationProviderInterf
                 'service'           => $driver,
                 'glideURL'          => $parameter['glide_url'],
                 'glideKey'          => $parameter['glide_key'],
-                'plugin'            => $parameter['plugins'],
+                'plugin'            => $parameter['plugin'],
                 'path'              => $path.$homeFolder, //removed slash for Flysystem compatibility
                 'startPath'         => $parameter['start_path'],
                 'URL'               => $this->getURL($parameter, $request, $homeFolder, $path),
