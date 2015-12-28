@@ -53,7 +53,7 @@ Recommended bundles to use with:
 - [Advanced configuration](/Resources/doc/advanced-configuration.md)
     - [Custom configuration provider](/Resources/doc/advanced-configuration.md#custom-configuration-provider)
     - [Custom loader](/Resources/doc/advanced-configuration.md#custom-loader)
-    - [Plugins](/Resources/doc/advanced-configuration.md#plugins)
+    - [Plugin](/Resources/doc/advanced-configuration.md#plugin)
     - [Service as volume driver](/Resources/doc/advanced-configuration.md#symfony-service-as-a-volume-driver)
     - [Flysystem configuration](/Resources/doc/advanced-configuration.md#flysystem-configuration)
 

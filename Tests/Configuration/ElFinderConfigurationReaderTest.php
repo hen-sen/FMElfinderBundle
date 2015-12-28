@@ -69,7 +69,7 @@ class ElFinderConfigurationReaderTest extends \PHPUnit_Framework_TestCase
                 'default'  => array(
                     'cors_support' => '',
                     'connector'    => array(
-                        'debug' => '', 'binds' => '', 'plugins' => '',
+                        'debug' => '', 'binds' => '', 'plugin' => '',
                         'roots' => array(
                             'uploads' => array(
                                 'flysystem'         => array('enabled' => false),
@@ -79,7 +79,7 @@ class ElFinderConfigurationReaderTest extends \PHPUnit_Framework_TestCase
                                 'driver'            => 'LocalFileSystem',
                                 'glide_url'         => '',
                                 'glide_key'         => '',
-                                'plugins'           => '',
+                                'plugin'            => '',
                                 'start_path'        => '',
                                 'alias'             => '',
                                 'mime_detect'       => '',

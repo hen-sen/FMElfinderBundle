@@ -311,11 +311,11 @@ class Configuration implements ConfigurationInterface
     }
 
     /**
-     * @return \Symfony\Component\Config\Definition\Builder\NodeDefinition The plugins node.
+     * @return \Symfony\Component\Config\Definition\Builder\NodeDefinition The plugin node.
      */
     private function createPluginsNode()
     {
-        return $this->createNode('plugins')
+        return $this->createNode('plugin')
             ->useAttributeAsKey('name')
                 ->prototype('array')
                 ->useAttributeAsKey('name')
