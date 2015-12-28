@@ -22,7 +22,7 @@ class ElFinderBridge extends ElFinder
             if (isset($o['service'])) {
                 $driver = $o['service'];
                 if (is_object($driver) && $driver instanceof ElFinderVolumeDriver) {
-                    $volume = $driver;
+                    $volume = clone($driver);
                     unset($opts['roots'][$i]);
                 }
             }
